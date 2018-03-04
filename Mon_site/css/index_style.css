@@ -1,0 +1,59 @@
+img {
+	padding-top: 1%;
+	height: 50%;
+	width: 100%;
+}
+
+.pres {
+	width: 100%;
+}
+
+hr {
+	width: 80%;
+}
+
+.pres section {
+	text-align: center;
+	padding-left: 20%;
+	width: 80%;
+}
+
+.real {
+	padding-bottom: 10%;
+	width: 100%;
+}
+
+
+.card-deck {
+	padding-top: 3%;
+	padding-left:2%; 
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 2%;
+}
+
+.network {
+	width: 100%;
+	padding-bottom: 10%;
+}
+
+.network img {
+	padding-right: 2%;
+	width: 5%;
+}
+
+.img-center {
+	width: 100%;
+	text-align: center;
+}
+
+.logo-yt {
+	padding-top: 2%;
+}
+
+h3 {
+	text-align: center;
+}
