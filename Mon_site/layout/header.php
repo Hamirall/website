@@ -15,7 +15,6 @@
 			<li class=""><a href="#" class="">Présentation</a></li>
 			<li class=""><a href="#" class="">Mes réalisations</a></li>
 			<li class=""><a href="#" class="">Mes réseaux</a></li>
-			<li class=""><a href="#" class="">Contact</a></li>
 		</ul>
 	</nav>	 
 

@@ -1,6 +1,8 @@
 <?php include 'layout/header.php' ?>
 
-<img src="img/programmation.jpg" alt="image de programmation">
+<div class="img-head">
+	<img src="img/programmation.png" alt="image de programmation">
+</div>
 
 <div class="pres">
 	<h1>Présentation</h1>
@@ -21,9 +23,11 @@
 
 <div class="real">
 	<h1>Mes réalisations</h1>
+	
 	<hr>
 		
 	<div class="card-deck">
+		  
 		  <div class="card">
 		    <img class="card-img-top" src="..." alt="Card image cap">
 		    <div class="card-body">
@@ -32,6 +36,7 @@
 		      <a href="#" class="btn btn-primary">Exemple</a>
 		    </div>
 		  </div>
+		
 		  <div class="card">
 		    <img class="card-img-top" src="..." alt="Card image cap">
 		    <div class="card-body">
@@ -40,6 +45,7 @@
 		      <a href="#" class="btn btn-primary">Exemple</a>
 		    </div>
 		  </div>
+		  
 		  <div class="card">
 		    <img class="card-img-top" src="..." alt="Card image cap">
 		    <div class="card-body">
@@ -47,23 +53,45 @@
 		      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
 		       <a href="#" class="btn btn-primary">Exemple</a>
 		    </div>
+		  
 		  </div>
 		</div>
 	</div>
 
-<div class="network">
-	<h3>Mes réseaux sociaux</h3>
-	<hr>
 
+
+
+<div class="contact">
+	<h2>Contact</h2>
 	
-	<div class="img-center">
-		<img src="img/network/github.png" alt="logo GitHub">
-		<img src="img/network/twitter.png" alt="logo Twitter">
-		<img src="img/network/linkedin.png" alt="logo Linkedin">
-		<img src="img/network/youtube.png" alt="logo YouTube" class="logo-yt">
+	<hr>
+		
+	<form action="#" methode="post">
+	
+	<div class="form-group">
+	    
+	    <label>Votre email </label>
+
+	    <input type="email" class="form-control" col="3" placeholder="email@exemple.com">
+		<label>Votre nom</label>
+	    <input type="text" class="form-control" placeholder="Nom">
+
+	    <label>Votre prénom</label>
+	    <input type="email" class="form-control" placeholder="Prénom">
+
+	    <label id="label-msg">Votre mesage</label>
+	    <textarea rows="5"></textarea>
+		
+		<div class="button">
+	    	<button class="btn btn-primary" type="submit">Envoyer</button>
+		</div>
 	</div>
-	
+
+</form>
+
 </div>
+
+
 
 
 <?php include 'layout/footer.php' ?>
