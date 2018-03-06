@@ -17,6 +17,7 @@ nav  ul {
 }
 
 nav ul li {
+	font-weight: bold;
 	display: block;
 	display: inline;
 	padding-right: 2%;
