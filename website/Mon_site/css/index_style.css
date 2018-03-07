@@ -9,6 +9,7 @@
 }
 
 .pres {
+	padding-top: 1%;
 	width: 100%;
 }
 
@@ -39,11 +40,14 @@
 	width: 100%;
 }
 
+#maquette {
+	font-weight: bold;
+}
+
 
 .contact {
 	height: 100%;
 	width: 100%;
-	padding-bottom: 10%;
 	text-align: center;
 }
 
@@ -89,6 +93,13 @@ hr {
 
 .form-group {
 	background-color: #FBFBFB;
+	font-size: 18px;
+}
+
+legend {
+	padding-top:2%;
+	font-size: 16px;
+	font-style: italic;
 }
 
 #fond {
@@ -101,16 +112,11 @@ hr {
 	padding-bottom: 2%;
 }
 
-
 .plus {
+	text-align: center;
+	height: 130px;
 	width: 100%;
-	background-color: #181818;
-	color: white;
-}
-
-
-.plus ul li {
-	list-style: none;
+	background-color: #007BFF;
 	color: white;
 }
 
@@ -118,12 +124,18 @@ hr {
 	color: white;
 }
 
-.plus ul li a:hover {
-	text-decoration: none;
-	color: #E3E3E3;
+.plus ul li {
+	text-align: center;
+	padding-right: 2%;
+	display: inline;
+	list-style: none;
 }
 
-.fixed {
-	position: fixed;
-	z-index: 3;
+.plus ul li a:hover {
+	text-decoration: none;
 }
+
+#tiret {
+	padding-right: 1%;
+}
+

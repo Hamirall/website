@@ -4,7 +4,7 @@ session_start();
 
 function veriInput() {
 	
-	if (!empty($_POST['email']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['message'])) {
+	if (!empty($_POST['email']) && !empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['message']) && !empty($_POST['demande'])) {
 		
 		email();
 	} 
@@ -20,16 +20,18 @@ function veriInput() {
 function email() {
 
  	
- 	$expediteur = stripslashes($_POST['email']); 
-    $nom = stripslashes($_POST['nom']); 
-    $prenom = stripslashes($_POST['prenom']);  
-    $message = stripslashes($_POST['message']); 
+ 	$expediteur = stripslashes(trim($_POST['email'])); 
+    $nom = stripslashes(trim($_POST['nom'])); 
+    $prenom = stripslashes(trim($_POST['prenom']));  
+    $message = stripslashes(trim($_POST['message']); 
+    $sujet = stripcslashes(trim($_POST['demande']);
 
     /* Destinataire (votre adresse e-mail) */
 $to = 'testfonctionmail@gmail.com';
  
 /* Construction du message */
-$msg  = 'Bonjour,'. $nom ."\n";
+$msg  = 'Bonjour je suis,'. $nom ."\n";
+$msg .= "l'objet de mon message est " . $sujet."\n";
 $msg .= 'Ce mail a été envoyé depuis Hamirall.com par : '.$nom."\n\n";
 $msg .= 'Voici le message qui vous est adressé :'."\n";
 $msg .= '***************************'."\n";
@@ -43,9 +45,8 @@ mail($to, $msg, $headers);
 
 header("Location: ../index.php");
 $_SESSION['success_message'] = "Votre message à bien été envoyé";
+
 }
-
-
 
 veriInput();
 
